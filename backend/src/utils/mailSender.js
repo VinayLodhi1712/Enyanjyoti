@@ -1,29 +1,3 @@
-/** @format */
-
-const nodemailer = require("nodemailer");
-require("dotenv").config();
-
-const mailSender = async (email, title, body) => {
-	try {
-		let transporter = nodemailer.createTransport({
-			host: process.env.MAIL_HOST,
-			auth: {
-				user: process.env.MAIL_USER,
-				pass: process.env.MAIL_PASS,
-			},
-		});
-
-		// send mail
-		let info = await transporter.sendMail({
-			from: `Study Notion - by Harsh Bhardwaj`,
-			to: email,
-			subject: `${title}`,
-			html: `${body}`,
-		});
-		console.log(info);
-	} catch (err) {
-		console.log("Error in sending mail");
-	}
-};
-
-module.exports = mailSender;
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff9b674f263249368c597533b7a795094062b4a74adf1a33b46828d59f09cbee
+size 577

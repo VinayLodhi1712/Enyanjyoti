@@ -97,9 +97,43 @@ form textarea{
     .img-container{
         display:none
      }
-     .button-container{
-        height:fit-content;
-        margin-block: 20px;
-     }
+     .button-container {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically, if needed */
+        margin-top: 20px; /* Add some space above the button */
+    }
+    
+    .btn {
+        padding: 12px 24px; /* Increase padding for a larger button */
+        font-size: 16px; /* Increase font size for better readability */
+        background-color: #007BFF; /* Example button color */
+        color: white; /* Button text color */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+        min-width: 150px; /* Set a minimum width */
+        width: auto; /* Allow width to adjust based on content */
+        box-sizing: border-box; /* Include padding in width calculations */
+        text-align: center; /* Center text */
+    }
+    
+    .btn:hover {
+        background-color: #0056b3; /* Darken color on hover */
+    }
     
 }
+
+.success-message {
+    color: green; /* Green text for success */
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin-top: 20px; /* Add some space above */
+}
+
+.error-message {
+    color: red; /* Red text for errors */
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin-top: 20px; /* Add some space above */
+}
+
