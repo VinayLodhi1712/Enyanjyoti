@@ -3,3 +3,9 @@
 *.jsx filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
+backend/server.js filter=lfs diff=lfs merge=lfs -text
+backend/src/controllers/contactUs.js filter=lfs diff=lfs merge=lfs -text
+backend/src/mail/template.js filter=lfs diff=lfs merge=lfs -text
+backend/src/routes/contact.js filter=lfs diff=lfs merge=lfs -text
+backend/src/utils/mailSender.js filter=lfs diff=lfs merge=lfs -text
+frontend/src/pages/Contact/Contact.js filter=lfs diff=lfs merge=lfs -text
